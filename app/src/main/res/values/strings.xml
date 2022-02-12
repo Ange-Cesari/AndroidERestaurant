@@ -1,0 +1,85 @@
+<resources>
+    <!-- Général -->
+    <string name="app_name">Ange E-Restaurant</string>
+    <string name="logoContentDescription">Logo</string>
+    <string name="APIfailure">API request failed</string>
+    <string name="totalPrice">Total : </string>
+
+    <!-- Extra -->
+    <string name="ExtraCategoryTitle">categoryTitle</string>
+    <string name="ExtraDishName">dishName</string>
+
+    <!-- Shared Preferences -->
+    <string name="spFileName">SharedPreferences</string>
+    <string name="spTotalQuantity">totalBasketQuantity</string>
+    <string name="spTotalPrice">totalBasketPrice</string>
+    <string name="spUserId">userId</string>
+
+    <!-- BasketActivity -->
+    <string name="basketTitle">Votre panier</string>
+    <string name="basketButtonBuy">Passer la commande</string>
+    <string name="basketIconDeleteContentDescription">Button de suppression d\'un item</string>
+    <string name="basketButtonDeleteAllContentDescription">Button de suppression de tout le panier</string>
+    <string name="basketDeleteAllTxt">Votre panier a été supprimé</string>
+    <string name="quantity">Quantité : </string>
+    <string name="basketTotalQuantity">Quantité totale : </string>
+
+    <!-- CategoryActivity -->
+    <string name="listImageContentDescription">Image</string>
+
+    <!-- CommandActivity -->
+    <string name="successCommandTxt">Votre commande est en cours de livraison !</string>
+    <string name="failureCommandTxt">Votre commande n\'a pas aboutie, nous en sommes désolé</string>
+    <string name="successCommand">Commande réussie</string>
+    <string name="warningUserLogout">Vous devez être connecté pour passer commande</string>
+
+    <!-- DetailsDishActivity -->
+    <string name="dishLessButton">-</string>
+    <string name="dishMoreButton">+</string>
+    <string name="addToBasket">Ajout au panier réussi</string>
+
+    <!-- HomeActivity -->
+    <string name="starter">Entrées</string>
+    <string name="mainDish">Plats</string>
+    <string name="dessert">Desserts</string>
+    <string name="contentDescriptionStarter">Image d\'entrée qui mène vers la liste des entrées</string>
+    <string name="contentDescriptionMainDish">Image de plats qui mène vers la liste des plats</string>
+    <string name="contentDescriptionDessert">Image de desserts qui mène vers la liste des desserts</string>
+
+    <!-- LoginActivity -->
+    <string name="loginTitle">Connexion</string>
+    <string name="signupTitle">Inscription</string>
+    <string name="firstname">Prénom</string>
+    <string name="lastname">Nom</string>
+    <string name="address">Adresse</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="loginToSignUp">Pas encore de compte ? Inscrivez-vous !</string>
+    <string name="signUpToLogin">Déjà inscrit ? Connectez-vous !</string>
+    <string name="validForm">Valider</string>
+    <string name="successLogin">Connexion réussie</string>
+    <string name="failureLogin">Mauvais identifiant</string>
+    <string name="successSignup">Inscription réussie</string>
+    <string name="signupErrorPassword">Merci d\'entrer un mot de passe d\'au moins 8 caractères</string>
+    <string name="signupErrorEmail">Merci d\'entrer un email valide</string>
+    <string name="signupErrorOther">Merci de remplir tous les champs</string>
+
+    <!-- MenuActivity -->
+    <string name="menuBasketTitle">Icone panier</string>
+    <string name="menuQuantityBasketTitle">Quantité d\'item dans le panier</string>
+    <string name="menuUserTitle">Icone utilisateur</string>
+
+    <!-- UserActivity -->
+    <string name="userTitle">Bienvenu sur votre espace abonné !</string>
+    <string name="userLogoutButton">Déconnexion</string>
+    <string name="successLogout">Vous êtes déconnecté</string>
+
+
+    <!-- Fragments  -->
+    <string name="white_round_background">Juste un background blanc pour donner du relief</string>
+    <string name="logo">Le logo du restaurant</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="hometomapsstring">Nous situer</string>
+
+
+</resources>
