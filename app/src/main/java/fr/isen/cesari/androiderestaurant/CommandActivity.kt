@@ -2,7 +2,9 @@ package fr.isen.cesari.androiderestaurant
 
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.widget.Toast
 import com.android.volley.DefaultRetryPolicy
@@ -22,6 +24,9 @@ class CommandActivity : MenuActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        val handler = Handler()
+
+
         binding = ActivityCommandBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -33,6 +38,12 @@ class CommandActivity : MenuActivity() {
         } else {
             newCommandRequest(userid)
         }
+
+
+        handler.postDelayed({
+            startActivity(Intent(this, HomeActivity::class.java))
+        }, 5000)
+
     }
 
     private fun newCommandRequest(userId : Int) {

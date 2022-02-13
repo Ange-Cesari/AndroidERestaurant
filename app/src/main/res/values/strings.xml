@@ -2,7 +2,7 @@
     <!-- Général -->
     <string name="app_name">Ange E-Restaurant</string>
     <string name="logoContentDescription">Logo</string>
-    <string name="APIfailure">API request failed</string>
+    <string name="APIfailure">La requête a échoué</string>
     <string name="totalPrice">Total : </string>
 
     <!-- Extra -->
@@ -29,9 +29,9 @@
 
     <!-- CommandActivity -->
     <string name="successCommandTxt">Votre commande est en cours de livraison !</string>
-    <string name="failureCommandTxt">Votre commande n\'a pas aboutie, nous en sommes désolé</string>
+    <string name="failureCommandTxt">Votre commande n\'a pas aboutie, merci de réessayer</string>
     <string name="successCommand">Commande réussie</string>
-    <string name="warningUserLogout">Vous devez être connecté pour passer commande</string>
+    <string name="warningUserLogout">Vous devez vous connecter pour commander</string>
 
     <!-- DetailsDishActivity -->
     <string name="dishLessButton">-</string>
@@ -65,21 +65,22 @@
     <string name="signupErrorOther">Merci de remplir tous les champs</string>
 
     <!-- MenuActivity -->
-    <string name="menuBasketTitle">Icone panier</string>
+    <string name="menuBasketTitle">Panier</string>
     <string name="menuQuantityBasketTitle">Quantité d\'item dans le panier</string>
-    <string name="menuUserTitle">Icone utilisateur</string>
+    <string name="menuUserTitle">Connexion</string>
 
     <!-- UserActivity -->
-    <string name="userTitle">Bienvenu sur votre espace abonné !</string>
+    <string name="userTitle">Mon Espace</string>
     <string name="userLogoutButton">Déconnexion</string>
-    <string name="successLogout">Vous êtes déconnecté</string>
+    <string name="successLogout">Déconnexion</string>
 
 
     <!-- Fragments  -->
-    <string name="white_round_background">Juste un background blanc pour donner du relief</string>
-    <string name="logo">Le logo du restaurant</string>
+    <string name="white_round_background">Element de design</string>
+    <string name="logo">Logo du restaurant</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="hometomapsstring">Nous situer</string>
+    <string name="cartimagedescription">Image du panier</string>
 
 
 </resources>
