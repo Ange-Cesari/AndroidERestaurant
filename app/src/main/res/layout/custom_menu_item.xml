@@ -19,7 +19,7 @@
         android:src="@drawable/icon_basket" />
 
     <TextView
-        android:id="@+id/menuTextQuantity"
+        android:id="@+id/quantityTextMenu"
         style="@style/Widget.Design.FloatingActionButton"
         android:layout_width="18dp"
         android:layout_height="18dp"

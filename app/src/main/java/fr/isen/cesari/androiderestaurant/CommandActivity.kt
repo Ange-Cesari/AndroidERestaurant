@@ -17,6 +17,7 @@ import fr.isen.cesari.androiderestaurant.model.DishBasket
 import fr.isen.cesari.androiderestaurant.model.ListBasket
 import org.json.JSONObject
 import java.io.File
+import fr.isen.cesari.androiderestaurant.model.Constants
 
 class CommandActivity : MenuActivity() {
     private lateinit var binding : ActivityCommandBinding
@@ -47,12 +48,12 @@ class CommandActivity : MenuActivity() {
     }
 
     private fun newCommandRequest(userId : Int) {
-        val url = "http://test.api.catering.bluecodegames.com/user/order"
+        val url = Constants.BASE_URL+"/user/order"
 
         val params = HashMap<String, Any>()
-        params["id_shop"] = 1
-        params["id_user"] = userId
-        params["msg"] = recupBasketFile().toString()
+        params[Constants.KEY_SHOP] = Constants.ID_SHOP
+        params[Constants.ID_USER] = userId
+        params[Constants.MSG] = recupBasketFile().toString()
         val jsonObject = JSONObject(params as Map<*, *>)
 
         val request = JsonObjectRequest(

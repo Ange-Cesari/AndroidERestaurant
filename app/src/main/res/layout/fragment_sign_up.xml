@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/roundcorner_rectangle" />
 
     <TextView
-        android:id="@+id/signupTitle"
+        android:id="@+id/TitleSignup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
@@ -53,7 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.174"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signupTitle"
+        app:layout_constraintTop_toBottomOf="@+id/TitleSignup"
         tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
     <EditText
@@ -72,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/signupLastnameEditText"
-        app:layout_constraintTop_toBottomOf="@+id/signupTitle"
+        app:layout_constraintTop_toBottomOf="@+id/TitleSignup"
         tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
     <EditText

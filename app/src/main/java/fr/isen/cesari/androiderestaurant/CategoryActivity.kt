@@ -13,6 +13,7 @@ import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import fr.isen.cesari.androiderestaurant.adapter.DishAdapter
 import fr.isen.cesari.androiderestaurant.databinding.ActivityCategoryBinding
+import fr.isen.cesari.androiderestaurant.model.Constants
 import fr.isen.cesari.androiderestaurant.model.Dish
 import fr.isen.cesari.androiderestaurant.model.DishRequestResult
 import org.json.JSONObject
@@ -36,7 +37,7 @@ class CategoryActivity : MenuActivity() {
         val url = "http://test.api.catering.bluecodegames.com/menu"
 
         val params = HashMap<String, Number>()
-        params["id_shop"] = 1
+        params[Constants.KEY_SHOP] = Constants.ID_SHOP
         val jsonObject = JSONObject(params as Map<*, *>)
 
         val request = JsonObjectRequest(

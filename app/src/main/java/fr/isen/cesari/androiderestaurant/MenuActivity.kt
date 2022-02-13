@@ -11,7 +11,7 @@ open class MenuActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu, menu)
 
-        menu.findItem(R.id.menuButtonBasket).actionView.findViewById<TextView>(R.id.menuTextQuantity).text = (this.getSharedPreferences(getString(R.string.spFileName), Context.MODE_PRIVATE).getInt(getString(R.string.spTotalQuantity), 0)).toString()
+        menu.findItem(R.id.menuButtonBasket).actionView.findViewById<TextView>(R.id.quantityTextMenu).text = (this.getSharedPreferences(getString(R.string.spFileName), Context.MODE_PRIVATE).getInt(getString(R.string.spTotalQuantity), 0)).toString()
 
         return true
     }

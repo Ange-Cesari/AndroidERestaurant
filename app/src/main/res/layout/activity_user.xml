@@ -8,7 +8,7 @@
     tools:context=".UserActivity">
 
     <TextView
-        android:id="@+id/userTitle"
+        android:id="@+id/titleUser"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -29,6 +29,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userTitle"
+        app:layout_constraintTop_toBottomOf="@+id/titleUser"
         tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,7 +3,6 @@ package fr.isen.cesari.androiderestaurant
 import android.content.Context
 import android.os.Bundle
 import android.widget.Toast
-import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 import com.squareup.picasso.Picasso
 import fr.isen.cesari.androiderestaurant.databinding.ActivityDetailsDishBinding

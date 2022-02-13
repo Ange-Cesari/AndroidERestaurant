@@ -14,6 +14,7 @@ import com.android.volley.toolbox.Volley
 import fr.isen.cesari.androiderestaurant.LoginActivity
 import fr.isen.cesari.androiderestaurant.R
 import fr.isen.cesari.androiderestaurant.databinding.FragmentSignUpBinding
+import fr.isen.cesari.androiderestaurant.model.Constants
 import fr.isen.cesari.androiderestaurant.model.SignUpData
 import org.json.JSONObject
 
@@ -60,15 +61,15 @@ class SignUpFragment : Fragment() {
     }
 
     private fun signUp(signUpData : SignUpData) {
-        val url = "http://test.api.catering.bluecodegames.com/user/register"
+        val url = Constants.BASE_URL+"/user/register"
 
         val params = HashMap<String, Any>()
-        params["id_shop"] = 1
-        params["firstname"] = signUpData.firstname
-        params["lastname"] = signUpData.lastname
-        params["address"] = signUpData.address
-        params["email"] = signUpData.email
-        params["password"] = signUpData.password
+        params[Constants.KEY_SHOP] = Constants.ID_SHOP
+        params[Constants.FIRSTNAME] = signUpData.firstname
+        params[Constants.LASTNAME] = signUpData.lastname
+        params[Constants.ADDRESS] = signUpData.address
+        params[Constants.EMAIL] = signUpData.email
+        params[Constants.PASSWORD] = signUpData.password
         val jsonObject = JSONObject(params as Map<*, *>)
 
         val request = JsonObjectRequest(

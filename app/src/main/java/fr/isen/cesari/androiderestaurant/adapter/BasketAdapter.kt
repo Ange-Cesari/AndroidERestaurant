@@ -36,9 +36,9 @@ class BasketAdapter(private val baskets : List<DishBasket>, private val onBasket
     }
 
     class BasketViewHolder(binding : BasketCellBinding) : RecyclerView.ViewHolder(binding.root) {
-        val name: TextView = binding.basketCellTitle
-        val price: TextView = binding.basketCellPrice
-        val quantity: TextView = binding.basketCellQuantity
-        val delete: ImageView = binding.basketCellIconDelete
+        val name: TextView = binding.basketTitleCell
+        val price: TextView = binding.basketPriceCell
+        val quantity: TextView = binding.basketQuantityCell
+        val delete: ImageView = binding.basketDeleteIconCell
     }
 }

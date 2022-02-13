@@ -15,6 +15,7 @@ import com.google.gson.Gson
 import fr.isen.cesari.androiderestaurant.LoginActivity
 import fr.isen.cesari.androiderestaurant.R
 import fr.isen.cesari.androiderestaurant.databinding.FragmentLoginBinding
+import fr.isen.cesari.androiderestaurant.model.Constants
 import fr.isen.cesari.androiderestaurant.model.LoginData
 import fr.isen.cesari.androiderestaurant.model.LoginRequestResult
 import org.json.JSONObject
@@ -47,12 +48,12 @@ class LoginFragment : Fragment() {
     }
 
     private fun login(loginData : LoginData) {
-        val url = "http://test.api.catering.bluecodegames.com/user/login"
+        val url = Constants.BASE_URL+"/user/login"
 
         val params = HashMap<String, Any>()
-        params["id_shop"] = 1
-        params["email"] = loginData.email
-        params["password"] = loginData.password
+        params[Constants.KEY_SHOP] = Constants.ID_SHOP
+        params[Constants.EMAIL] = loginData.email
+        params[Constants.PASSWORD] = loginData.password
         val jsonObject = JSONObject(params as Map<*, *>)
 
         val request = JsonObjectRequest(
